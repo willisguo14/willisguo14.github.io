@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willis Guo</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Open+Sans:wght@300;400&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="icon" type="image/png" href="images/icon.png">
+
+</head>
+
+<body>
+    <div id="loader-container">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>Willis Guo</h1>
+            <a href="Willis_Guo_Resume_v2.pdf" target="_blank">Resume</a>
+        </div>
+        <div class="about">
+            <p>Hi! I'm a first year <span class="about-emphasis">Engineering Science</span> student at the University
+                of Toronto, interested in <span class="about-emphasis">artificial intelligence</span>
+                and <span class="about-emphasis">software engineering</span>.</p>
+        </div>
+        <div class="separator"></div>
+        <div class="controls">
+            <button type="button" class="control active" data-filter="all">All</button>
+            <button type="button" class="control" data-filter=".ai">AI</button>
+            <button type="button" class="control" data-filter=".software">Software</button>
+        </div>
+        <div class="mixitup-container">
+            <div class="mix software" id="food">
+                <div class="img-container">
+                    <img src="images/food.jpg">
+                </div>
+                <h2>Software <span>&#8226;</span> Mobile</h2>
+                <h1>Foodful</h1>
+                <p>Cross platform mobile app for exchanging unused food to reduce food waste.</p>
+            </div>
+            <div class="mix ai" id="nmt">
+                <div class="img-container">
+                    <img src="images/translate.jpg">
+                </div>
+                <h2>AI <span>&#8226;</span> NLP</h2>
+                <h1>NMT</h1>
+                <p>Neural machine translation with attention.</p>
+            </div>
+            <div class="mix ai" id="nst">
+                <div class="img-container">
+                    <img src="images/art.jpg">
+                </div>
+                <h2>AI <span>&#8226;</span> CNN</h2>
+                <h1>NST</h1>
+                <p>Neural style transfer using convolutional networks.</p>
+            </div>
+            <div class="mix ai" id="quora">
+                <div class="img-container">
+                    <img src="images/questions.jpg">
+                </div>
+                <h2>AI <span>&#8226;</span> NLP</h2>
+                <h1>Question Duplicates</h1>
+                <p>Siamese RNN with LSTMs to detect duplicate questions. Trained with Quora's dataset.</p>
+            </div>
+            <div class="mix ai" id="cbow">
+                <div class="img-container">
+                    <img src="images/cbow.jpg">
+                </div>
+                <h2>AI <span>&#8226;</span> NLP</h2>
+                <h1>Word2Vec CBOW</h1>
+                <p>Word2Vec's Continuous Bag of Words model for training word embeddings.</p>
+            </div>
+            <div class="mix software" id="insight">
+                <div class="img-container">
+                    <img src="images/social.jpg">
+                </div>
+                <h2>Software <span>&#8226;</span> Full-Stack</h2>
+                <h1>Insights.io</h1>
+                <p>Full stack social media application for sharing mental models and key insights.</p>
+            </div>
+            <div class="mix ai" id="cat">
+                <div class="img-container">
+                    <img src="images/cat.jpg">
+                </div>
+                <h2>AI <span>&#8226;</span> Neural Networks</h2>
+                <h1>Cat Classifier</h1>
+                <p>From scratch implementation of a deep neural network and backpropagation.</p>
+            </div>
+            <div class="mix software" id="uniform">
+                <div class="img-container">
+                    <img src="images/uniform.jpg">
+                </div>
+                <h2>Software <span>&#8226;</span> Java</h2>
+                <h1>Uniform Sales</h1>
+                <p>Java desktop application automating sales transactions and financial accounting operations.</p>
+            </div>
+            <div class="mix software" id="eth">
+                <div class="img-container">
+                    <img src="images/eth.jpg">
+                </div>
+                <h2>Software <span>&#8226;</span> Blockchain</h2>
+                <h1>Cambocoin</h1>
+                <p>Ethereum dApp with its own token system.</p>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="mobile-footer">
+            <p class="email">gwillis.guo@mail.utoronto.ca</p>
+            <p class="phone">(647) 261-2188</p>
+            <div class="accounts">
+                <a href="https://www.linkedin.com/in/willisguo/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/willisguo14" target="_blank">Github</a>
+            </div>
+        </div>
+        <div class="footer">
+            <p>gwillis.guo@mail.utoronto.ca</p>
+            <div class="accounts">
+                <a href="https://www.linkedin.com/in/willisguo/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/willisguo14" target="_blank">Github</a>
+            </div>
+            <p>(647) 261-2188</p>
+        </div>
+    </div>
+
+
+
+    <script src="mixitup.min.js"></script>
+    <script>
+        var containerEl = document.querySelector('.mixitup-container');
+        var mixer = mixitup(containerEl);
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
