@@ -7,7 +7,8 @@ $(document).ready(function () {
         $(".control").removeClass("active");
         $(this).addClass("active");
     });
-
+    $("#transformer").click(() => window.open("https://github.com/willisguo14/transformer-summarizer", "_blank"));
+    $("#nmt").click(() => window.open("https://github.com/willisguo14/nmt-attention", "_blank"));
     $("#quora").click(() => window.open("https://github.com/willisguo14/siamese-network", "_blank"));
     $("#nst").click(() => window.open("https://github.com/willisguo14/neural-style-transfer", "_blank"));
     $("#cbow").click(() => window.open("https://github.com/willisguo14/Word2Vec-CBOW", "_blank"));
