@@ -7,6 +7,7 @@ $(document).ready(function () {
         $(".control").removeClass("active");
         $(this).addClass("active");
     });
+    $("#wgan").click(() => window.open("https://github.com/willisguo14/WGAN", "_blank"));
     $("#transformer").click(() => window.open("https://github.com/willisguo14/transformer-summarizer", "_blank"));
     $("#nmt").click(() => window.open("https://github.com/willisguo14/nmt-attention", "_blank"));
     $("#quora").click(() => window.open("https://github.com/willisguo14/siamese-network", "_blank"));
@@ -16,3 +17,4 @@ $(document).ready(function () {
     $("#cat").click(() => window.open("https://github.com/willisguo14/deep-nn", "_blank"));
     $("#eth").click(() => window.open("projects/blockchain.pdf", "_blank"));
 });
+
