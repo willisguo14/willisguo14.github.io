@@ -1,6 +1,5 @@
 :root {
-  --open-sans: "Open Sans", sans-serif;
-  --merriweather: "Merriweather", serif;
+  --font: "Open Sans", sans-serif;
   --blue: #005bd1;
   --gray: rgb(150, 150, 150);
 }
@@ -10,7 +9,7 @@
   padding: 0;
   box-sizing: border-box;
 
-  font-family: var(--open-sans);
+  font-family: var(--font);
 
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
   -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
@@ -110,7 +109,7 @@
 }
 
 .header h1 {
-  font-family: var(--open-sans);
+  font-family: var(--font);
   font-size: 60px;
   color: var(--blue);
 }
@@ -137,7 +136,7 @@
   margin-top: 20px;
 }
 .about p {
-  font-family: var(--open-sans);
+  font-family: var(--font);
   font-size: 17.5px;
   line-height: 29px;
 }
@@ -247,7 +246,7 @@
 }
 
 .mix h1 {
-  font-family: var(--open-sans);
+  font-family: "Lato", sans-serif;
 
   margin-top: -5px;
   margin-bottom: 7.5px;
