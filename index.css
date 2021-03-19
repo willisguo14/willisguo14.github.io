@@ -423,7 +423,8 @@
   margin-bottom: 7.5px;
 }
 
-.links a {
+.links a,
+.links p {
   font-size: 17.5px;
 
   text-transform: lowercase;
@@ -436,7 +437,8 @@
 
   margin: 2.5px 10px;
 }
-.links a:hover {
+.links a:hover,
+.links p:hover {
   color: black;
   border-bottom: 1px solid black;
 }
@@ -474,7 +476,8 @@
     margin-bottom: 0;
   }
 
-  .links a {
+  .links a,
+  .links p {
     margin: 0 15px;
   }
 
