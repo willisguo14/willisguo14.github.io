@@ -131,7 +131,7 @@
   border-bottom: 1px solid black;
 }
 
-.about {
+/* .about {
   margin: 15px;
   margin-top: 20px;
 }
@@ -139,7 +139,7 @@
   font-family: var(--font);
   font-size: 17.5px;
   line-height: 29px;
-}
+} */
 
 .about-emphasis {
   color: var(--blue);
@@ -363,5 +363,122 @@
 @media only screen and (max-width: 768px) {
   .footer {
     display: none;
+  }
+}
+
+.header-container {
+  margin: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .headshot-container {
+  margin: 15px;
+} */
+.headshot-container img {
+  max-width: 200px;
+  padding: 7px;
+  border: 7.5px solid var(--blue);
+  border-radius: 50%;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.description-container h1 {
+  font-family: var(--font);
+  font-size: 60px;
+  color: var(--blue);
+
+  margin-bottom: 5px;
+}
+.description-container p {
+  font-family: var(--font);
+  font-size: 17.5px;
+  line-height: 29px;
+}
+.about {
+  margin-bottom: 15px;
+}
+.about-emphasis {
+  color: var(--blue);
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin-bottom: 7.5px;
+}
+
+.links a {
+  font-size: 17.5px;
+
+  text-transform: lowercase;
+
+  text-decoration: none;
+
+  transition: 0.3s;
+  color: var(--gray);
+  border-bottom: 1px solid var(--gray);
+
+  margin: 2.5px 10px;
+}
+.links a:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+#email {
+  cursor: default;
+}
+
+@media only screen and (min-width: 715px) {
+  .header-container {
+    width: 685px;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .header-container {
+    width: calc(100% - 30px);
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .headshot-container {
+    margin-right: 50px;
+    margin-top: 20px;
+  }
+
+  .description-container {
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .links {
+    margin-bottom: 0;
+  }
+
+  .links a {
+    margin: 0 15px;
+  }
+
+  #resume {
+    margin-left: 0;
   }
 }
