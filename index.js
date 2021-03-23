@@ -7,6 +7,7 @@ $(document).ready(function () {
         $(".control").removeClass("active");
         $(this).addClass("active");
     });
+    $("#stylegan").click(() => window.open("https://github.com/willisguo14/StyleGAN/tree/main", "_blank"));
     $("#wgan").click(() => window.open("https://github.com/willisguo14/WGAN", "_blank"));
     $("#transformer").click(() => window.open("https://github.com/willisguo14/transformer-summarizer", "_blank"));
     $("#nmt").click(() => window.open("https://github.com/willisguo14/nmt-attention", "_blank"));
