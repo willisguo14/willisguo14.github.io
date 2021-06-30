@@ -1,0 +1,429 @@
+@import "http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700";
+#timeline .timeline-item:after,
+#timeline .timeline-item:before {
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  /* background: #f5f5f7; */
+  /* background: white; */
+  margin: 0;
+  padding: 0;
+  font-family: helvetica;
+  line-height: 28px;
+  font-size: 18px;
+  color: #242c3d;
+  font-weight: 300;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 50px auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Dosis", arial, tahoma, verdana;
+  font-weight: 500;
+  color: #242c3d;
+}
+
+.header-container {
+  margin: 30px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 30px auto;
+  max-width: 708px;
+}
+@media screen and (max-width: 768px) {
+  .header-container {
+    margin: 30px;
+  }
+}
+
+.headshot-border {
+  /* padding: 5px; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  border: 5px solid #222d47;
+
+  margin: 30px;
+}
+.headshot-container {
+  width: 200px;
+  height: 200px;
+
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 50px;
+
+  margin: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 24px 10px; */
+}
+
+.headshot-container img {
+  max-height: 100%;
+  margin: 10px;
+  border-radius: 50%;
+  /* border: 2px solid #ece4d2; */
+}
+
+.header-container h1 {
+  font-size: 50px;
+  color: #222d47;
+  margin: 20px;
+}
+
+.header-container p {
+  margin-bottom: 40px;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.links-container a {
+  margin: 5px 8px;
+  position: relative;
+  transition: 0.3s;
+  color: #898e9c;
+  padding: 5px 8px;
+  /* border-bottom: 1px solid gray; */
+}
+.links-container a:hover {
+  color: #222d47;
+}
+
+.project-name {
+  text-align: center;
+  font-size: 40px;
+  margin: 80px 0;
+  margin-bottom: 60px;
+  font-weight: 400;
+  font-family: "Dosis";
+}
+
+#timeline {
+  width: 100%;
+  margin: 30px auto;
+  position: relative;
+  padding: 0 20px;
+  /* -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease; */
+}
+#timeline:before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.05);
+  left: 50%;
+  top: 0;
+  position: absolute;
+}
+#timeline:after {
+  content: "";
+  clear: both;
+  display: table;
+  width: 100%;
+}
+#timeline .timeline-item {
+  margin-bottom: 50px;
+  position: relative;
+}
+#timeline .timeline-item .timeline-icon {
+  /* background: #3b6836; */
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  margin-left: -4px;
+
+  border-radius: 50%;
+
+  box-shadow: rgba(149, 157, 165, 0.1) 0px 0px 24px 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#timeline .timeline-item .timeline-content {
+  width: 45%;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#timeline .timeline-item .timeline-content.right {
+  float: right;
+}
+
+@media screen and (max-width: 768px) {
+  #timeline {
+    margin: 30px;
+    padding: 0px;
+    width: 90%;
+  }
+  #timeline:before {
+    left: 0;
+  }
+  #timeline .timeline-item .timeline-content {
+    width: 90%;
+    float: right;
+  }
+  #timeline .timeline-item .timeline-icon {
+    left: 0;
+  }
+  .timeline-date,
+  .date-right {
+    visibility: hidden;
+  }
+}
+
+/* MY CSS */
+.timeline-content {
+  background: white;
+  box-shadow: rgba(149, 157, 165, 0.1) 0px 0px 24px 10px;
+}
+
+.timeline-content-image {
+  margin-bottom: 20px;
+}
+
+.timeline-content-image img {
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.timeline-content-description {
+  margin: 0;
+}
+.timeline-content-description h1 {
+  line-height: 35px;
+}
+.timeline-content-description p {
+  margin: 7.5px 0;
+}
+
+.timeline-content-description .btn {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.timeline-date {
+  position: absolute;
+  padding: 10px 20px;
+  top: 0px;
+  left: 55%;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.08) 0px 0px 5px 5px;
+  background: white;
+}
+.date-right {
+  position: absolute;
+  padding: 10px 20px;
+  top: 0px;
+  right: 55%;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.08) 0px 0px 5px 5px;
+  background: white;
+}
+
+#forcolab {
+  background: #5fb5ff;
+}
+#nxm {
+  background: #3f308c;
+}
+#learnai {
+  background: #f76c6c;
+}
+#tfs {
+  background: #52b691;
+}
+
+#timeline .timeline-item #last-item {
+  margin-bottom: 0;
+}
+
+/* MIX IT UP */
+
+.controls {
+  margin: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* @media only screen and (max-width: 767px) {
+  .controls {
+    display: none;
+  }
+} */
+
+.controls .control {
+  background: none;
+  border: none;
+  margin: 0px 10px;
+  padding: 5px;
+  color: #898e9c;
+  font-size: 17.5px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  transition: 0.3s;
+
+  font-family: "Dosis";
+}
+
+.control:hover {
+  color: #242c3d;
+}
+
+.controls .active {
+  color: #242c3d;
+}
+
+.mixitup-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+
+  margin: 20px;
+}
+@media screen and (max-width: 768px) {
+  .mixitup-container {
+    margin: 30px;
+  }
+}
+
+.mix {
+  width: 100%;
+  min-height: 100px;
+
+  margin: 20px 30px;
+
+  cursor: pointer;
+
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.1) 0px 0px 15px 5px;
+
+  background: white;
+}
+
+@media only screen and (min-width: 600px) {
+  .mix {
+    width: calc((100% - 120px) / 2);
+    margin: 40px 30px;
+  }
+}
+
+/* @media only screen and (min-width: 1000px) {
+  .mix {
+    width: calc((100% - 90px) / 3);
+  }
+} */
+
+.mix .img-container {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  border-radius: 7.5px;
+  margin-bottom: 10px;
+}
+
+.mix img {
+  width: 100%;
+  height: auto;
+
+  display: block;
+
+  border-radius: 7.5px;
+
+  /* margin-bottom: 7.5px; */
+
+  /* transition: 0.4s; */
+  /* transform: scale(1); */
+}
+
+/* .mix:hover img {
+  transform: scale(1.08);
+} */
+
+.mix h2 {
+  font-size: 15px;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.5px;
+  color: #898e9c;
+
+  margin-bottom: 10px;
+}
+
+.mix h2 span {
+  color: #898e9c;
+}
+
+.mix h1 {
+  margin-top: -5px;
+  margin-bottom: 7.5px;
+
+  display: inline-block;
+}
+
+.mix h1 {
+  position: relative;
+  text-decoration: none;
+  /* transition: 0.4s; */
+}
+
+.projects-container {
+  max-width: 900px;
+}
