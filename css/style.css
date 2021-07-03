@@ -286,7 +286,7 @@ h4 {
 
 @media only screen and (max-width: 768px) {
   #timeline {
-    margin: 30px;
+    margin: 30px auto;
     padding: 0px;
     width: 90%;
   }
@@ -507,4 +507,9 @@ h4 {
 
 .projects-container {
   max-width: 900px;
+}
+
+.footer {
+  margin: 50px;
+  color: white;
 }
