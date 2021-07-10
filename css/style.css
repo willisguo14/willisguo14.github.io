@@ -330,6 +330,16 @@ h4 {
 .timeline-content-description p {
   margin: 7.5px 0;
 }
+.timeline-content-description ul {
+  padding: 0 20px;
+}
+.timeline-content-description li {
+  margin: 7.5px 0;
+}
+.timeline-content-description li span {
+  position: relative;
+  left: 5px;
+}
 
 .timeline-content-description .btn {
   margin-top: 10px;
