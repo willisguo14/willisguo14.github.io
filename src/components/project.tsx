@@ -12,7 +12,7 @@ const Project = () => {
                 <div className='group flex flex-row items-stretch justify-start gap-5 px-2 py-1 rounded-xl cursor-pointer transition hover:bg-orange-100'>
 
                     <div className='min-w-[71px] bg-orange-100 p-2 rounded-lg flex items-center justify-center aspect-square'>
-                        <Image src='/pytorch.svg' alt='art' width={55} height={55} />
+                        <Image src='/pytorch.svg' alt='art' width={55} height={55} radius="none"/>
                     </div>
 
                     <div className='flex flex-col items-start justify-start p-2'>
@@ -26,7 +26,7 @@ const Project = () => {
                 <div className='group flex flex-row items-stretch justify-start gap-5 px-2 py-1 rounded-xl cursor-pointer transition hover:bg-lime-100'>
 
                     <div className='min-w-[71px] bg-lime-100 p-2 rounded-lg flex items-center justify-center aspect-square'>
-                        <Image src='/snake.svg' alt='art' width={55} height={55} />
+                        <Image src='/snake.svg' alt='art' width={55} height={55} radius="none"/>
                     </div>
 
                     <div className='flex flex-col items-start justify-start p-2'>

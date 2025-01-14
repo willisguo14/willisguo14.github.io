@@ -11,13 +11,13 @@ const Research = () => {
             <a href="/#" target="_blank">
                 <div className='group flex flex-row items-stretch justify-start gap-5 px-2 py-1 rounded-xl cursor-pointer transition hover:bg-red-100'>
                     <div className='min-w-[71px] bg-red-100 p-2 rounded-lg flex items-center justify-center aspect-square'>
-                        <Image src='/video.svg' alt='art' width={55} height={55} />
+                        <Image src='/video.svg' alt='art' width={55} height={55} radius="none"/>
                     </div>
 
                     <div className='flex flex-col items-start justify-start p-2 gap-1'>
                         <div className='flex flex-row items-center justify-start gap-1 rounded-md bg-transparent pl-1.5 pr-2 py-0.5 border border-slate-200 transition group-hover:border-red-700'>
                             <div className='min-w-[18px] relative flex items-center justify-center aspect-square'>
-                                <Image src='/send.svg' alt='language' width={17} height={17}/>
+                                <Image src='/send.svg' alt='language' width={17} height={17} radius="none"/>
                             </div>
                             <p className='text-sm font-medium'>In Submission</p>
                         </div>
@@ -33,13 +33,13 @@ const Research = () => {
             <a href="/#" target="_blank">
                 <div className='group flex flex-row items-stretch justify-start gap-5 px-2 py-1 rounded-xl cursor-pointer transition hover:bg-pink-100'>
                     <div className='min-w-[71px] bg-pink-100 p-2 rounded-lg flex items-center justify-center aspect-square'>
-                        <Image src='/cocktail2.svg' alt='art' width={55} height={55} />
+                        <Image src='/cocktail2.svg' alt='art' width={55} height={55} radius="none"/>
                     </div>
 
                     <div className='flex flex-col items-start justify-start p-2 gap-1'>
                         <div className='flex flex-row items-center justify-start gap-1 rounded-md bg-transparent pl-1.5 pr-2 py-0.5 border border-slate-200 transition group-hover:border-pink-700'>
                             <div className='min-w-[18px] relative flex items-center justify-center aspect-square'>
-                                <Image src='/send.svg' alt='language' width={17} height={17}/>
+                                <Image src='/send.svg' alt='language' width={17} height={17} radius="none"/>
                             </div>
                             <p className='text-sm font-medium'>In Submission</p>
                         </div>
@@ -55,13 +55,13 @@ const Research = () => {
             <a href="https://aclanthology.org/2024.emnlp-main.379.pdf" target="_blank" rel="noreferrer">
                 <div className='group flex flex-row items-stretch justify-start gap-5 px-2 py-1 rounded-xl cursor-pointer transition hover:bg-blue-100'>
                     <div className='min-w-[71px] bg-blue-100 p-2 rounded-lg flex items-center justify-center aspect-square'>
-                        <Image src='/logic.svg' alt='art' width={55} height={55} />
+                        <Image src='/logic.svg' alt='art' width={55} height={55} radius="none"/>
                     </div>
 
                     <div className='flex flex-col items-start justify-start p-2 gap-1'>
                         <div className='flex flex-row items-center justify-start gap-1 rounded-md bg-transparent pl-1.5 pr-2 py-0.5 border border-slate-200 transition group-hover:border-blue-700'>
                             <div className='min-w-[18px] relative flex items-center justify-center aspect-square'>
-                                <Image src='/send.svg' alt='language' width={17} height={17}/>
+                                <Image src='/send.svg' alt='language' width={17} height={17} radius="none"/>
                             </div>
                             <p className='text-sm font-medium'>EMNLP 2024</p>
                         </div>
@@ -77,13 +77,13 @@ const Research = () => {
             <a href="https://aclanthology.org/2024.emnlp-main.378.pdf" target="_blank" rel="noreferrer">
                 <div className='group flex flex-row items-stretch justify-start gap-5 px-2 py-1 rounded-xl cursor-pointer transition hover:bg-lime-100'>
                     <div className='min-w-[71px] bg-lime-100 p-2 rounded-lg flex items-center justify-center aspect-square'>
-                        <Image src='/qa.svg' alt='art' width={55} height={55} />
+                        <Image src='/qa.svg' alt='art' width={55} height={55} radius="none"/>
                     </div>
 
                     <div className='flex flex-col items-start justify-start p-2 gap-1'>
                         <div className='flex flex-row items-center justify-start gap-1 rounded-md bg-transparent pl-1.5 pr-2 py-0.5 border border-slate-200 transition group-hover:border-lime-700'>
                             <div className='min-w-[18px] relative flex items-center justify-center aspect-square'>
-                                <Image src='/send.svg' alt='language' width={17} height={17} />
+                                <Image src='/send.svg' alt='language' width={17} height={17} radius="none"/>
                             </div>
                             <p className='text-sm font-medium'>EMNLP 2024</p>
                         </div>

@@ -10,7 +10,7 @@ const Experience = () => {
                 <div className='group flex flex-row items-stretch justify-start gap-5 px-2 py-1 rounded-xl transition hover:bg-red-100'>
                     {/* image */}
                     <div className='min-w-[71px] relative bg-red-100 p-2 rounded-lg flex items-center justify-center aspect-square'>
-                        <Image src='/mld.png' alt='CMU MLD' width={50} height={50} />
+                        <Image src='/mld.png' alt='CMU MLD' width={50} height={50} radius="none"/>
                     </div>
                     {/* description */}
                     <div className='flex flex-col items-start justify-start p-2 gap-1'>
@@ -39,7 +39,7 @@ const Experience = () => {
                 <div className='group flex flex-row items-stretch justify-start gap-5 px-2 py-1 rounded-xl transition hover:bg-orange-100'>
                     {/* image */}
                     <div className='min-w-[71px] relative bg-orange-100 p-2 rounded-lg flex items-center justify-center aspect-square'>
-                        <Image src='/aws.svg' alt='language' width={50} height={50} />
+                        <Image src='/aws.svg' alt='language' width={50} height={50} radius="none"/>
                     </div>
                     {/* description */}
                     <div className='flex flex-col items-start justify-start p-2 gap-1'>
@@ -63,7 +63,7 @@ const Experience = () => {
                 <div className='group flex flex-row items-stretch justify-start gap-5 px-2 py-1 rounded-xl transition hover:bg-sky-100'>
                     {/* image */}
                     <div className='min-w-[71px] relative bg-sky-100 p-2 rounded-lg flex items-center justify-center aspect-square'>
-                        <Image src='/uoft-leaf.png' alt='language' width={50} height={50} />
+                        <Image src='/uoft-leaf.png' alt='language' width={50} height={50} radius="none"/>
                     </div>
                     {/* description */}
                     <div className='flex flex-col items-start justify-start p-2 gap-1'>
@@ -86,7 +86,7 @@ const Experience = () => {
                 <div className='group flex flex-row items-stretch justify-start gap-5 px-2 py-1 rounded-xl transition hover:bg-orange-100'>
                     {/* image */}
                     <div className='min-w-[71px] relative bg-orange-100 p-2 rounded-lg flex items-center justify-center aspect-square'>
-                        <Image src='/aws.svg' alt='language' width={50} height={50} />
+                        <Image src='/aws.svg' alt='language' width={50} height={50} radius="none"/>
                     </div>
                     {/* description */}
                     <div className='flex flex-col items-start justify-start p-2 gap-1'>
@@ -110,7 +110,7 @@ const Experience = () => {
                 <div className='group flex flex-row items-stretch justify-start gap-5 px-2 py-1 rounded-xl transition hover:bg-blue-100'>
                     {/* image */}
                     <div className='min-w-[71px] relative bg-blue-100 p-2 rounded-lg flex items-center justify-center aspect-square'>
-                        <Image src='/autoronto.png' alt='language' width={50} height={50} />
+                        <Image src='/autoronto.png' alt='language' width={50} height={50} radius="none"/>
                     </div>
                     {/* description */}
                     <div className='flex flex-col items-start justify-start p-2 gap-1'>
@@ -131,7 +131,7 @@ const Experience = () => {
                 <div className='group flex flex-row items-stretch justify-start gap-5 px-2 py-1 rounded-xl transition hover:bg-sky-100'>
                     {/* image */}
                     <div className='min-w-[71px] relative bg-sky-100 p-2 rounded-lg flex items-center justify-center aspect-square'>
-                        <Image src='/uoft-leaf.png' alt='language' width={50} height={50} />
+                        <Image src='/uoft-leaf.png' alt='language' width={50} height={50} radius="none"/>
                     </div>
                     {/* description */}
                     <div className='flex flex-col items-start justify-start p-2 gap-1'>
