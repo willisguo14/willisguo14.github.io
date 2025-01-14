@@ -1,60 +1,48 @@
-import { Link } from "@nextui-org/link";
-import { Snippet } from "@nextui-org/snippet";
-import { Code } from "@nextui-org/code";
-import { button as buttonStyles } from "@nextui-org/theme";
-
-import { siteConfig } from "@/config/site";
-import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
-import DefaultLayout from "@/layouts/default";
+import About from "@/components/about";
+import Info from "@/components/info";
+import Divider from "@/components/divider";
+import Research from "@/components/research";
+import Experience from "@/components/experience";
+import Project from "@/components/project";
+import { Tabs, Tab, Spacer } from "@nextui-org/react";
 
 export default function IndexPage() {
   return (
-    <DefaultLayout>
-      <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-        <div className="inline-block max-w-lg text-center justify-center">
-          <span className={title()}>Make&nbsp;</span>
-          <span className={title({ color: "violet" })}>beautiful&nbsp;</span>
-          <br />
-          <span className={title()}>
-            websites regardless of your design experience.
-          </span>
-          <div className={subtitle({ class: "mt-4" })}>
-            Beautiful, fast and modern React UI library.
-          </div>
-        </div>
+    <main className='mx-auto lg:max-w-4xl px-5 py-10'>
 
-        <div className="flex gap-3">
-          <Link
-            isExternal
-            className={buttonStyles({
-              color: "primary",
-              radius: "full",
-              variant: "shadow",
-            })}
-            href={siteConfig.links.docs}
-          >
-            Documentation
-          </Link>
-          <Link
-            isExternal
-            className={buttonStyles({ variant: "bordered", radius: "full" })}
-            href={siteConfig.links.github}
-          >
-            <GithubIcon size={20} />
-            GitHub
-          </Link>
-        </div>
+      <About />
 
-        <div className="mt-8">
-          <Snippet hideCopyButton hideSymbol variant="bordered">
-            <span>
-              Get started by editing{" "}
-              <Code color="primary">pages/index.tsx</Code>
-            </span>
-          </Snippet>
-        </div>
-      </section>
-    </DefaultLayout>
+      <div className='mx-2 my-10'>
+        <Info />
+      </div>
+
+
+      <Divider />
+
+      <Spacer y={5} />
+
+      <Tabs aria-label="tabs" variant="underlined" size="lg" classNames={{ tabList: "p-0" }}>
+        <Tab key="publications" title="Publications">
+          {/* <Header header='Publications' /> */}
+          <Spacer y={10} />
+          <Research />
+        </Tab>
+        <Tab key="projects" title="Projects">
+          {/* <Header header='Projects' /> */}
+          <Spacer y={10} />
+          <Project />
+        </Tab>
+        <Tab key="work" title="Work">
+          {/* <Header header='Work' /> */}
+          <Spacer y={10} />
+          <Experience />
+        </Tab>
+      </Tabs>
+      {/* <Divider />
+        <div className='flex items-center justify-center my-10'>
+          <Info />
+        </div> */}
+
+    </main>
   );
 }
