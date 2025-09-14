@@ -3,7 +3,6 @@ import Info from "@/components/info";
 import Divider from "@/components/divider";
 import Research from "@/components/research";
 import Experience from "@/components/experience";
-import Project from "@/components/project";
 import { Tabs, Tab, Spacer } from "@nextui-org/react";
 
 export default function IndexPage() {
