@@ -11,11 +11,11 @@ const About = () => {
 
             <div className='mx-2 flex flex-col justify-start items-start gap-3'>
                 <h1 className='text-2xl font-medium mb-3'>Hi! I'm Willis</h1>
-                <p className='leading-7'>
-                    I’m a first-year Master’s in Machine Learning student at Carnegie Mellon University, where I am advised by <Link href="https://www.cs.cmu.edu/~rsalakhu/" underline="hover" isExternal>Ruslan Salakhutdinov</Link>. My current research interest is improving vision-language models as multimodal dialogue agents.
+                <p className="leading-7">
+                    I’m a Master’s in <Link href="https://www.ml.cmu.edu/" underline="hover" isExternal className="text-red-600">Machine Learning</Link> student at <Link href="https://www.cmu.edu/" underline="hover" isExternal className="text-red-600">Carnegie Mellon University</Link> and ML Research Engineer Intern at <Link href="https://scale.com/" underline="hover" isExternal className="text-indigo-600">Scale AI</Link> working on ML systems.
                 </p>
                 <p className="leading-7">
-                    Previously, I completed my BASc in Machine Intelligence at the University of Toronto, where I worked on neuro-symbolic reasoning with LLMs and LLM-augmented knowledge graph question answering (KGQA), advised by <Link href="https://d3m.mie.utoronto.ca/" underline="hover" isExternal>Scott Sanner</Link>.
+                    At CMU, I’ve been fortunate to be advised by <Link href="https://scholar.google.com/citations?user=ITZ1e7MAAAAJ&hl=en" underline="hover" isExternal className="text-sky-500">Ruslan Salakhutdinov</Link> working on VLM reasoning. Prior to CMU, I studied <Link href="https://engsci.utoronto.ca/program/majors/machine-intelligence/" underline="hover" isExternal className="text-blue-600">Machine Intelligence</Link> at the <Link href="https://www.utoronto.ca/" underline="hover" isExternal className="text-blue-600">University of Toronto</Link>, where I was advised by <Link href="https://scholar.google.com/citations?user=kB8UPNIAAAAJ&hl=en" underline="hover" isExternal className="text-sky-500">Scott Sanner</Link> working on LLM logical reasoning and knowledge-graph-augmented LLMs.
                 </p>
             </div >
         </div >

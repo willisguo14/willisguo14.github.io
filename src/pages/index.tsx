@@ -8,7 +8,7 @@ import { Tabs, Tab, Spacer } from "@nextui-org/react";
 
 export default function IndexPage() {
   return (
-    <main className='mx-auto lg:max-w-4xl px-5 py-10'>
+    <main className='mx-auto lg:max-w-3xl px-5 py-10'>
 
       <About />
 
@@ -22,20 +22,15 @@ export default function IndexPage() {
       <Spacer y={5} />
 
       <Tabs aria-label="tabs" variant="underlined" size="lg" classNames={{ tabList: "p-0" }}>
+        <Tab key="work" title="Experience">
+          {/* <Header header='Work' /> */}
+          <Spacer y={10} />
+          <Experience />
+        </Tab>
         <Tab key="publications" title="Publications">
           {/* <Header header='Publications' /> */}
           <Spacer y={10} />
           <Research />
-        </Tab>
-        <Tab key="projects" title="Projects">
-          {/* <Header header='Projects' /> */}
-          <Spacer y={10} />
-          <Project />
-        </Tab>
-        <Tab key="work" title="Work">
-          {/* <Header header='Work' /> */}
-          <Spacer y={10} />
-          <Experience />
         </Tab>
       </Tabs>
       {/* <Divider />

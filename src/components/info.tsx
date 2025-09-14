@@ -1,6 +1,9 @@
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+import { IoMailUnread } from "react-icons/io5";
+
 import { IoDocumentText } from "react-icons/io5";
+import { FaGoogleScholar } from "react-icons/fa6";
+
 
 const Info = () => {
     return (
@@ -17,9 +20,20 @@ const Info = () => {
 
             {/* small screens */}
             <div className='w-min mx-2 px-2 py-1 flex flex-row items-center justify-start gap-1 rounded-lg border border-slate-200'>
+                <a href="mailto:willisg@cs.cmu.edu" target="_blank" rel="noreferrer">
+                    <div className='group flex items-center justify-center p-[7px] rounded-lg cursor-pointer transition hover:bg-slate-100'>
+                        <IoMailUnread size={22} className=' group-hover:text-pink-600' />
+                    </div>
+                </a>
                 <a href="https://www.linkedin.com/in/willisguo/" target="_blank" rel="noreferrer">
                     <div className='group flex items-center justify-center p-[7px] rounded-lg cursor-pointer transition hover:bg-slate-100'>
                         <FaLinkedin size={22} className='group-hover:text-sky-600' />
+                    </div>
+                </a>
+
+                <a href="https://scholar.google.com/citations?user=Orm_3AsAAAAJ&hl=en&oi=ao" target="_blank" rel="noreferrer">
+                    <div className='group flex items-center justify-center p-[7px] rounded-lg cursor-pointer transition hover:bg-slate-100'>
+                        <FaGoogleScholar size={22} className=' group-hover:text-blue-600' />
                     </div>
                 </a>
 
@@ -29,11 +43,6 @@ const Info = () => {
                     </div>
                 </a>
 
-                <a href="mailto:gwillis.guo@mail.utoronto.ca" target="_blank" rel="noreferrer">
-                    <div className='group flex items-center justify-center p-[7px] rounded-lg cursor-pointer transition hover:bg-slate-100'>
-                        <MdEmail size={22} className=' group-hover:text-pink-600' />
-                    </div>
-                </a>
             </div>
 
         </div>
