@@ -19,10 +19,12 @@ const Experience = () => {
                             ML Research Engineer Intern @ Scale AI
                         </h1>
 
-                        <div className='flex flex-row items-start gap-2 text-slate-500 mb-2 text-sm'>
-                            <p>May 2025 - Present</p>
-                            <p className=''>|</p>
-                            <p>San Francisco, CA</p>
+                        <div className='text-slate-500 mb-2 text-sm'>
+                            <p>
+                                <span>May 2025 - Present</span>
+                                <span className='mx-2'>|</span>
+                                <span>San Francisco, CA</span>
+                            </p>
                         </div>
 
                         <p>Systems optimizations for distributed online RL training of LLMs / Test-time scaling laws for online RL.</p>
@@ -44,10 +46,10 @@ const Experience = () => {
                             ML Research Intern, Multimodal @ Carnegie Mellon University
                         </h1>
 
-                        <div className='flex flex-row items-start gap-2 text-slate-500 mb-2 text-sm'>
-                            <p>Sep. 2024 - May 2024</p>
-                            <p className=''>|</p>
-                            <p>Pittsburgh, PA</p>
+                        <div className='text-slate-500 mb-2 text-sm'>
+                            <span>Sep. 2024 - May 2025</span>
+                            <span className='mx-2'>|</span>
+                            <span>Pittsburgh, PA</span>
                         </div>
 
 
@@ -73,10 +75,10 @@ const Experience = () => {
                             SDE Intern @ Amazon Web Services
                         </h1>
 
-                        <div className='flex flex-row items-start gap-2 text-slate-500 mb-2 text-sm'>
-                            <p>Jul. 2024 - Aug. 2024</p>
-                            <p className=''>|</p>
-                            <p>Vancouver, CAN</p>
+                        <div className='text-slate-500 mb-2 text-sm'>
+                            <span>Jul. 2024 - Aug. 2024</span>
+                            <span className='mx-2'>|</span>
+                            <span>Vancouver, CAN</span>
                         </div>
 
 
@@ -98,10 +100,10 @@ const Experience = () => {
 
                         <h1 className='text-lg font-medium transition group-hover:text-sky-600'>Research Intern, LLMs @ University of Toronto</h1>
                         {/* <p className="text-slate-500 italic mb-2">Sep. 23' - Apr. 24'</p> */}
-                        <div className='flex flex-row items-start gap-2 text-slate-500 mb-2 text-sm'>
-                            <p>Sep. 2023 - Apr. 2024</p>
-                            <p className=''>|</p>
-                            <p>Toronto, CAN</p>
+                        <div className='text-slate-500 mb-2 text-sm'>
+                            <span>Sep. 2023 - Apr. 2024</span>
+                            <span className='mx-2'>|</span>
+                            <span>Toronto, CAN</span>
                         </div>
                         <p>Inference-time search algorithms for LLM reasoning. LLMs for reasoning over knowledge graphs.</p>
                     </div>
