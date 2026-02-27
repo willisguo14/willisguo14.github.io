@@ -21,7 +21,7 @@ const Experience = () => {
 
                         <div className='text-slate-500 mb-2 text-sm'>
                             <p>
-                                <span>May 2025 - Present</span>
+                                <span>May 2025 - Aug 2025</span>
                                 <span className='mx-2'>|</span>
                                 <span>San Francisco, CA</span>
                             </p>
